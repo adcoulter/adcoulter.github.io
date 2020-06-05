@@ -352,9 +352,9 @@ table {
 /* line 18, /home/adam/code/adcoulter/source/stylesheets/all.css.scss */
 body,
 html {
-  background: #none;
+  background: none;
   height: 100%;
-  color: #191919;
+  color: #333;
   font-family: 'Open Sans', sans-serif; }
   /* line 28, /home/adam/code/adcoulter/source/stylesheets/all.css.scss */
   body *,
@@ -363,7 +363,7 @@ html {
   /* line 32, /home/adam/code/adcoulter/source/stylesheets/all.css.scss */
   body a,
   html a {
-    color: #191919; }
+    color: #333; }
     /* line 35, /home/adam/code/adcoulter/source/stylesheets/all.css.scss */
     body a:hover,
     html a:hover {
@@ -429,15 +429,22 @@ html {
 @media only screen and (orientation: portrait) {
   /* line 118, /home/adam/code/adcoulter/source/stylesheets/all.css.scss */
   body {
-    background: #191919; }
-    /* line 122, /home/adam/code/adcoulter/source/stylesheets/all.css.scss */
+    background: #333; }
+    /* line 121, /home/adam/code/adcoulter/source/stylesheets/all.css.scss */
     body .content * {
       color: #fdfdfd; }
-    /* line 126, /home/adam/code/adcoulter/source/stylesheets/all.css.scss */
+    /* line 125, /home/adam/code/adcoulter/source/stylesheets/all.css.scss */
     body .content .its-me,
     body .content .info {
-      width: 100%; }
+      width: 100%;
+      position: absolute; }
     /* line 131, /home/adam/code/adcoulter/source/stylesheets/all.css.scss */
+    body .content .its-me {
+      height: 100%; }
+    /* line 136, /home/adam/code/adcoulter/source/stylesheets/all.css.scss */
     body .content .info {
       top: auto;
-      bottom: 10%; } }
+      bottom: 0;
+      padding-bottom: 10%;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin-left: 0; } }
